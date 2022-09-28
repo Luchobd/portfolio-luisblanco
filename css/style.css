@@ -85,11 +85,9 @@ form {
 
 /*  <===== CLASES NAVBAR=====> */
 .bd-grid {
-  max-width: 1240px;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 /*===== HEADER =====*/
@@ -118,7 +116,7 @@ form {
 }
 
 /*===== MEDIA QUERY NAV "Se coloca aca para que funcione, por especificidad"=====*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1290px) {
   .nav {
     position: fixed;
     top: 0;
@@ -130,12 +128,13 @@ form {
     padding: 1.5rem;
     z-index: var(--z-fixed);
     transition: 0.5s;
+    display: flex;
   }
 }
 
 /*===== NAV =====*/
 .nav__content {
-  height: 100%;
+  width: 100%;
   grid-template-rows: max-content 1fr max-content;
   row-gap: 2rem;
 }
@@ -719,7 +718,7 @@ form .icons a:hover {
 }
 
 /*===== MEDIA QUERIES TABLET MEDIUM and NORMAL max-width 768px=====*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1290px) {
   :root {
     --boton-padding: 18px 40px;
   }
@@ -894,7 +893,7 @@ form .icons a:hover {
 
 /*===== MEDIA QUERIES TABLET min-width 768px=====*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1290px) {
   :root {
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;

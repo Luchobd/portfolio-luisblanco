@@ -116,7 +116,7 @@ form {
 }
 
 /*===== MEDIA QUERY NAV "Se coloca aca para que funcione, por especificidad"=====*/
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 950px) {
   .nav {
     position: fixed;
     top: 0;
@@ -156,13 +156,15 @@ form {
   margin-bottom: 0.8rem;
   width: 56px;
   height: 56px;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   border-radius: 50%;
   overflow: hidden;
 }
 
-.nav__img img {
-  width: 46px;
+.nav__perfil .nav__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nav__name {
@@ -526,6 +528,10 @@ form {
   align-items: center;
 }
 
+.projects__item img {
+  max-width: 250px;
+}
+
 .projects__title {
   color: var(--color-primary);
   font-weight: bold;
@@ -718,7 +724,7 @@ form .icons a:hover {
 }
 
 /*===== MEDIA QUERIES TABLET MEDIUM and NORMAL max-width 768px=====*/
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 950px) {
   :root {
     --boton-padding: 18px 40px;
   }
@@ -748,6 +754,14 @@ form .icons a:hover {
 
   .nav__img-photo {
     border-radius: 50%;
+  }
+
+  .nav__img img {
+    /* max-width: 50%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: red; */
   }
 
   .hero__texts {
@@ -893,7 +907,7 @@ form .icons a:hover {
 
 /*===== MEDIA QUERIES TABLET min-width 768px=====*/
 
-@media screen and (min-width: 1290px) {
+@media screen and (min-width: 950px) {
   :root {
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;

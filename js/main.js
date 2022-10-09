@@ -56,13 +56,13 @@ if (localStorage.getItem("dark-mode") === "true") {
 // localStorage: es un pequeño almacenamiento que va quedar en el computador de quien este utilizando la pagina
 
 /* ======= MULTIPLES IDIOMAS // English to Spanish ======== */
-const check = document.querySelector("#check");
+// const check = document.querySelector("#check");
 
-check.addEventListener("click", () => {
-  let id = check.checked;
-  if (id == true) {
-    location.href = "es/index.html";
-  } else {
-    location.href = "../index.html";
-  }
-});
+// check.addEventListener("click", () => {
+//   let id = check.checked;
+//   if (id == true) {
+//     location.href = "../en/index.html";
+//   } else {
+//     location.href = "../index.html";
+//   }
+// });
